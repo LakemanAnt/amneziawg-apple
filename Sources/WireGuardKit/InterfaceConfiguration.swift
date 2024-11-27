@@ -20,6 +20,8 @@ public struct InterfaceConfiguration {
     public var mtu: UInt16?
     public var dns = [DNSServer]()
     public var dnsSearch = [String]()
+    public var dnsHTTPSURL: URL?
+    public var dnsTLSServerName: String?
 
     public init(privateKey: PrivateKey) {
         self.privateKey = privateKey
